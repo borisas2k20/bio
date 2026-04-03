@@ -1,163 +1,105 @@
 <!DOCTYPE html>
 <html lang="lt">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Borisas2k20 Bio</title>
-
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
-    color: white;
-    text-align: center;
-}
-
-/* HERO */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: radial-gradient(circle, #111 0%, #000 100%);
-}
-
-.hero h1 {
-    font-size: 55px;
-    margin: 0;
-    text-shadow: 0 0 15px #00ffcc;
-}
-
-.hero p {
-    color: #aaa;
-    margin: 10px 0 25px;
-}
-
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    margin: 6px;
-    border-radius: 8px;
-    border: 1px solid #00ffcc;
-    color: #00ffcc;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #00ffcc;
-    color: black;
-    box-shadow: 0 0 15px #00ffcc;
-}
-
-/* SECTION */
-.section {
-    padding: 60px 20px;
-}
-
-.section h2, .section h3 {
-    margin-bottom: 20px;
-    text-shadow: 0 0 10px #00ffcc;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
-    border-radius: 15px;
-    transition: 0.3s;
-    border: 1px solid rgba(0,255,204,0.2);
-}
-
-.card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 0 20px rgba(0,255,204,0.5);
-}
-
-/* FOOTER */
-.footer {
-    padding: 20px;
-    font-size: 14px;
-    color: #777;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borisas2k20 Bio</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 
 </head>
+
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <h1>Borisas2k20</h1>
-    <p>Streamer | Gamer | Developer</p>
+    <!-- HERO -->
+    <div class="hero">
+        <h1>Borisas2k20</h1>
+        <p>Streamer | Gamer | Developer</p>
 
-    <a href="#" class="btn">DISCORD</a>
-    <a href="#" class="btn">YOUTUBE</a>
-    <a href="https://www.twitch.tv/borisas2k20" class="btn">TWITCH</a>
-    <a href="#" class="btn">KICK</a>
-    <a href="#" class="btn">TIKTOK</a>
-</div>
-
-<!-- ABOUT -->
-<div class="section">
-    <h2>Apie mane</h2>
-    <p>Esu content kūrėjas, FiveM žaidėjas ir streameris. Kuriu projektus, eventus ir linksmas patirtis.</p>
-</div>
-
-<!-- PROJECTS -->
-<div class="section">
-    <h2>Projektai</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>🎮 Savas žaidimas</h3>
-            <p><iframe width="1335" height="751" src="https://www.youtube.com/embed/bzsCZy2uW7Q" title="Savas Žaidimas 11 su LTURepublic , cestovas , Omantas, Matulis, Easternas, Jusky, Dowony,  kairelio_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <div class="socials">
+            <a href="https://dc.b2k20.lt" class="social-link discord" aria-label="Discord">
+                <img src="https://cdn.simpleicons.org/discord" alt="Discord logo">
+            </a>
+            <a href="https://www.youtube.com/@borisas2k209" class="social-link youtube" aria-label="YouTube">
+                <img src="https://cdn.simpleicons.org/youtube" alt="YouTube logo">
+            </a>
+            <a href="https://www.twitch.tv/borisas2k20" class="social-link twitch" aria-label="Twitch">
+                <img src="https://cdn.simpleicons.org/twitch" alt="Twitch logo">
+            </a>
+            <a href="https://kick.com/borisas2k20" class="social-link kick" aria-label="Kick">
+                <img src="https://cdn.simpleicons.org/kick" alt="Kick logo">
+            </a>
+            <a href="https://www.tiktok.com/@borisas2k20" class="social-link tiktok" aria-label="TikTok">
+                <img src="https://cdn.simpleicons.org/tiktok" alt="TikTok logo">
+            </a>
         </div>
 
-        <div class="card">
-            <h3>📺 Mafijos vakaras</h3>
-            <p>Eventai su bendruomene</p>
-        </div>
-    </div>
-</div>
-
-<!-- VEIKLA -->
-<div class="section">
-    <h2>Mano veikla</h2>
-
-    <div class="cards">
-        <div class="card">
-            <h3>🎮 FiveM</h3>
-            <p>RP serveriai</p>
-        </div>
-
-        <div class="card">
-            <h3>📺 Stream</h3>
-            <p>Live streamai su bendruomene</p>
-        </div>
-
-        <div class="card">
-            <h3>🔥 Projektai</h3>
-            <p>Savas žaidimas bei mafijos vakarai</p>
+        <div class="hero-more">
+            <a href="#about" class="read-more">Galit paskaityti daugiau ↓</a>
+            <div class="quick-jumps">
+                <a href="#about">Apie mane</a>
+                <a href="#veikla">Veikla</a>
+                <a href="#projects">Projektai</a>
+               
+            </div>
         </div>
     </div>
-</div>
 
-<!-- FOOTER -->
-<div class="footer">
-    <p>© 2026 BORISAS2K20</p>
-</div>
+    <!-- ABOUT -->
+    <div class="section" id="about">
+        <h2>Apie mane</h2>
+        <p>Esu content kūrėjas, FiveM žaidėjas ir streameris. Kuriu projektus, eventus ir linksmas patirtis.</p>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+        <h2>Projektai</h2>
+
+        <div class="cards projects-cards">
+            <div class="card project-card">
+                <h3>🎮 Savas žaidimas</h3>
+                <div class="iframe-wrap">
+                  <iframe width="738" height="415" src="https://www.youtube.com/embed/bzsCZy2uW7Q" title="Savas Žaidimas 11 su LTURepublic , cestovas , Omantas, Matulis, Easternas, Jusky, Dowony,  kairelio_" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📺 Mafijos vakaras</h3>
+                <div class="iframe-wrap">
+                    <iframe width="738" height="415" src="https://www.youtube.com/embed/PK3JrsSMLko" title="Mafia su  DariusZaidzia dowony jusky Santiago popraumis akilabloom  vieversys97 moonthea_  laimegr" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- VEIKLA -->
+    <div class="section" id="veikla">
+        <h2>Mano veikla</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🎮 FiveM</h3>
+                <p>RP serveriai</p>
+            </div>
+
+            <div class="card">
+                <h3>📺 Stream</h3>
+                <p>Live streamai su bendruomene</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Projektai</h3>
+                <p>Savas žaidimas bei mafijos vakarai</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>© 2026 BORISAS2K20</p>
+    </div>
 
 </body>
+
 </html>
