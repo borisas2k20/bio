@@ -1,33 +1,79 @@
-<html>
+<!DOCTYPE html>
+<html lang="lt">
 <head>
-<title>INFO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mano Bio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      background: #00c6ff;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      background: #0072ff;
+      color: white;
+    }
+  </style>
 </head>
-<marquee>
-<body bgcolor="blue"><font color="black"><font size=30>INFO</font>
-</marquee>
-<hr>
-<body><font size=5><font color="red">
-<img src="Desert.jpg" align="right" height=50 width=50 1px>
-Name:Ernestas<br>
-DOB:18:12:1986<br>
-Address:Rokiškis<br>
-Nationality:Lietuvis<br>
-Gender:Female<br>
-<table style="width:50%"border=3>
-<tr>
-<th>semester</th>
-<th>grade</th>
-<th>cpga %</th>
-</tr>
-<tr>
-<th>1</th>
-<th>S</th>
-<th>80%</th>
-</tr>
-<tr>
-<th>2</th>
-<th>A</th>
-<th>78 %</th>
-</tr>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+    <h1>Tavo Vardas</h1>
+    <p>Streamer / Gamer / Kūrėjas</p>
+
+    <div class="links">
+      <a href="#">Discord</a>
+      <a href="#">YouTube</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div>
+
 </body>
 </html>
