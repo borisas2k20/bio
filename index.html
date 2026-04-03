@@ -1,81 +1,129 @@
 <!DOCTYPE html>
 <html lang="lt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mano Bio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mano Bio</title>
 
-    .card {
-      background: rgba(0,0,0,0.6);
-      padding: 30px;
-      border-radius: 20px;
-      text-align: center;
-      width: 320px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    }
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0d0d0d;
+    color: white;
+    text-align: center;
+}
 
-    .avatar {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid white;
-    }
+/* HERO */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-    h1 {
-      margin: 10px 0;
-      font-size: 24px;
-    }
+.hero h1 {
+    font-size: 50px;
+    margin: 0;
+}
 
-    p {
-      font-size: 14px;
-      opacity: 0.8;
-    }
+.hero p {
+    color: #aaa;
+    margin: 10px 0 20px;
+}
 
-    .links a {
-      display: inline-block;
-      margin: 10px 5px;
-      padding: 10px 15px;
-      border-radius: 10px;
-      background: #00c6ff;
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 5px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    .links a:hover {
-      background: #0072ff;
-      color: white;
-    }
-  </style>
+.btn:hover {
+    background: white;
+    color: black;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+</style>
+
 </head>
 <body>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/100" alt="Avatar" class="avatar">
+<!-- HERO -->
+<div class="hero">
     <h1>Tavo Vardas</h1>
-    <p>Streamer / Gamer / Kūrėjass</p>
+    <p>Streamer | Gamer | Developer</p>
 
-    <div class="links">
-      <a href="#">Discord</a>
-      <a href="#">YouTube</a>
-      <a href="#">Instagram</a>
-      <a href="#">Twitch</a>
-      <a href="#">Kick</a>
+    <a href="#" class="btn">DISCORD</a>
+    <a href="#" class="btn">YOUTUBE</a>
+    <a href="#" class="btn">TWITCH</a>
+</div>
+
+<!-- ABOUT -->
+<div class="section">
+    <h2>Apie mane</h2>
+    <p>Esu content kūrėjas, FiveM žaidėjas ir streameris. Kuriu projektus, eventus ir linksmas patirtis.</p>
+</div>
+
+<!-- PROJECTS -->
+<div class="section">
+    <h2>Mano veikla</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>🎮 FiveM</h3>
+            <p>RP serveriai, eventai, mafijos vakarai</p>
+        </div>
+
+        <div class="card">
+            <h3>📺 Stream</h3>
+            <p>Live streamai su bendruomene</p>
+        </div>
+
+        <div class="card">
+            <h3>🔥 Projektai</h3>
+            <p>Pikseliuok.lt ir kiti projektai</p>
+        </div>
     </div>
-  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+    <p>© 2026 Tavo vardas</p>
+</div>
 
 </body>
 </html>
