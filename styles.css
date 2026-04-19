@@ -4,7 +4,7 @@
     --bg-0: #07131a;
     --bg-1: #0b1d26;
     --surface: rgba(9, 27, 36, 0.62);
-    --surface-solid: #0f2a36;
+    --surface-solid: #276985;
     --text: #e9f7ff;
     --muted: #9dc2d0;
     --accent: #1de3cf;
@@ -28,8 +28,8 @@ body {
     font-family: "Sora", sans-serif;
     color: var(--text);
     background:
-        radial-gradient(circle at 20% 0%, rgba(29, 227, 207, 0.16), transparent 38%),
-        radial-gradient(circle at 85% 15%, rgba(109, 198, 255, 0.16), transparent 35%),
+        radial-gradient(circle at 20% 0%, rgba(51, 204, 189, 0.322), transparent 38%),
+        radial-gradient(circle at 85% 15%, rgba(38, 88, 119, 0.555), transparent 35%),
         linear-gradient(145deg, var(--bg-0), var(--bg-1));
     text-align: center;
     line-height: 1.55;
@@ -298,6 +298,17 @@ body {
     font-size: 13px;
     letter-spacing: 0.3px;
 }
+.naujiensoDiv {
+    width: 50vw;
+    height: auto;
+    margin: auto;
+}
+
+.naujiensoDiv img {
+   width: 100%;
+   height: 100%;
+}
+
 
 @keyframes bounceHint {
     0%,
@@ -371,3 +382,4 @@ body {
         padding: 18px;
     }
 }
+
